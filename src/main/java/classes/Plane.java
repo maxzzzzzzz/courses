@@ -1,14 +1,20 @@
 package classes;
 
+import com.sun.xml.internal.ws.developer.Serialization;
+
+import java.io.Serializable;
+import java.util.Comparator;
+
 /**
  * Created by ilost on 26.04.2017.
  */
-public class Plane extends Mashine {
+public class Plane extends Mashine implements Serializable,Comparator<Plane> {
     private String nameOfPlane;
     private int speed;
     private int weightOfPlane;
     private  int countOfWheels;
     private int countOfPassangers;
+    public Plane(){}
 
     public int getCountOfPassangers() {
         return countOfPassangers;
@@ -84,12 +90,38 @@ public class Plane extends Mashine {
 
     @Override
     public String toString() {
-        return "Plane{" +
-                "nameOfPlane is " + nameOfPlane + '\n' +
-                " speed is " + speed +'\n'+
-                " weightOfPlane is " + weightOfPlane +'\n'+
-                " countOfWheels is " + countOfWheels +'\n'+
-                "countOfPassangers is "+ countOfPassangers+
-                '}';
+        return "Plane: " +
+                "nameOfPlane is " + nameOfPlane+";"  +
+                " speed is " + speed +";"+
+                " weightOfPlane is " + weightOfPlane+";" +
+                " countOfWheels is " + countOfWheels +";"+
+                "countOfPassangers is "+ countOfPassangers
+                +'\n';
+    }
+
+    public int compare(Plane obj1, Plane obj2) {
+        String str1 = obj1.getName();
+        String str2 = obj2.getName();
+
+        return str1.compareTo(str2);
+    }
+//    public int compare1(Plane obj1, Plane obj2) {
+//        double speed1 = obj1.getSpeed();
+//        double speed2 = obj2.getSpeed();
+//
+//        if(speed1 > speed2) {
+//            return 1;
+//        }
+//        else if(speed1 < speed2) {
+//            return -1;
+//        }
+//        else {
+//            return 0;
+//        }
+//    }
+
+
+    public int compareTo(Object o) {
+        return 0;
     }
 }

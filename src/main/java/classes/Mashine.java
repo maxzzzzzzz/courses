@@ -1,11 +1,12 @@
 package classes;
 
+import com.google.gson.reflect.TypeToken;
 import interfaces.Run;
 
 /**
  * Created by ilost on 26.04.2017.
  */
-public abstract class Mashine implements Run {
+public abstract class Mashine implements Run,Comparable {
     public static final double MAX_SPEED = 1000;
     public static final double LOWEST_SPEED = 5;
     public static final int MIN_COUNT_OF_PASSANGERS = 1;
@@ -22,5 +23,6 @@ public abstract class Mashine implements Run {
     public String getName(){
         return nameOfVehicle ;
     }
+
 
 }

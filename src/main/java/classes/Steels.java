@@ -8,11 +8,10 @@ public class Steels extends Plane {
 //    public int speed;
 //    public  int wheight;
 //    public int countOfWheels ;
+public Steels(){}
 
-
-    public  Steels(String name, int speed, int wheight, int countOfWheels){
-        super(name,speed,wheight,countOfWheels);
+    public  Steels(String name, int speed, int wheight, int countOfWheels,int countofPassangers){
+        super(name,speed,wheight,countOfWheels,countofPassangers);
     }
-
 
 }

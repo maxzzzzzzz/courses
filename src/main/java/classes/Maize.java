@@ -10,13 +10,8 @@ public class Maize extends Plane {
 //    public int countOfWheels ;
 //    public int countOfPassangers;
 
-
-
      public Maize(String name, int speed, int wheight, int countOfWheels,int countOfPassangers){
         super(name,speed,wheight,countOfWheels,countOfPassangers);
         //this.countOfPassangers = countOfPassangers;
     }
-
-
-
 }

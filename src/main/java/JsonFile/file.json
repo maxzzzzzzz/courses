@@ -1,0 +1,34 @@
+[
+  {
+    "nameOfPlane": "Shark",
+    "speed": 1000,
+    "weightOfPlane": 500,
+    "countOfWheels": 3,
+    "countOfPassangers": 1,
+    "speedAtm": 0
+  },
+  {
+    "nameOfPlane": "Perani",
+    "speed": 999,
+    "weightOfPlane": 400,
+    "countOfWheels": 4,
+    "countOfPassangers": 2,
+    "speedAtm": 0
+  },
+  {
+    "nameOfPlane": "Dolphi",
+    "speed": 1800,
+    "weightOfPlane": 600,
+    "countOfWheels": 5,
+    "countOfPassangers": 3,
+    "speedAtm": 0
+  },
+  {
+    "nameOfPlane": "Do",
+    "speed": 800,
+    "weightOfPlane": 600,
+    "countOfWheels": 5,
+    "countOfPassangers": 4,
+    "speedAtm": 0
+  }
+]
